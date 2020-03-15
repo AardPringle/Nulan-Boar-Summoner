@@ -15,7 +15,7 @@
    save_state="y"
    date_written="2020-03-15 13:52:17"
    requires="5.07"
-   version="1.0"
+   version="1.1"
    >
 <description trim="y">
 <![CDATA[
@@ -59,6 +59,18 @@ Designate your bag by typing "nulanbag <bag id>"
 <!--  Aliases  -->
 
 <aliases>
+  <alias
+   match="^nulan$"
+   enabled="y"
+   regexp="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>ColourNote("red", "", "nulan &lt;mob name&gt; -- Summon this mob that is hiding in Nulan'Boar.")
+  ColourNote("red", "", "")
+  ColourNote("red", "", "nulanbag &lt;bag id&gt; -- Set the bag ID that your summoning tokens are stored in.")
+  </send>
+  </alias>
   <alias
    match="^nulanbag\s+(\d+)\s*$"
    enabled="y"
@@ -160,6 +172,12 @@ Syntax must match exactly.]])
 end</send>
   </alias>
 </aliases>
+
+<!--  Variables  -->
+
+<variables>
+  <variable name="nulan_bag_id"></variable>
+</variables>
 
 <!--  Plugin help  -->
 
