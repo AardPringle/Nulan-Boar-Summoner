@@ -18,4 +18,4 @@ You will need the following items from Nulan'Boar placed in a bag and not flagge
 (M) a feather of a grouse (1)  
 (M) a white owl feather (1)
 
-If you are missing any, simply keep killing mobs in the area until they drop. Tokens can drop from any mob. Designate your bag by typing "nulanbag <bag id>"
+If you are missing any, simply keep killing mobs in the area until they drop. Tokens can drop from any mob. Designate your bag by typing "nulanbag &lt;bag id&gt;"
