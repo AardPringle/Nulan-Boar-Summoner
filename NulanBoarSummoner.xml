@@ -161,12 +161,6 @@ end</send>
   </alias>
 </aliases>
 
-<!--  Variables  -->
-
-<variables>
-  <variable name="nulan_bag_id"></variable>
-</variables>
-
 <!--  Plugin help  -->
 
 <aliases>
