@@ -9,13 +9,13 @@ If your mob target is currently hiding, type nulan plus the mob's full name minu
 
 You will need the following items from Nulan'Boar placed in a bag and not flagged kept:
 
-(M) fur of a prairie dog (1)
-(M) badger fur (1)
-(M) a songbird feather (1)
-(M) an eagle feather (1)
-(M) Wolf tooth (1)
-(M) tail of a deer mouse (1)
-(M) a feather of a grouse (1)
+(M) fur of a prairie dog (1)  
+(M) badger fur (1)  
+(M) a songbird feather (1)  
+(M) an eagle feather (1)  
+(M) Wolf tooth (1)  
+(M) tail of a deer mouse (1)  
+(M) a feather of a grouse (1)  
 (M) a white owl feather (1)
 
 If you are missing any, simply keep killing mobs in the area until they drop. Tokens can drop from any mob. Designate your bag by typing "nulanbag <bag id>"
