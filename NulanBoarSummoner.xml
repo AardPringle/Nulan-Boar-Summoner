@@ -164,7 +164,7 @@ end</send>
 <!--  Variables  -->
 
 <variables>
-  <variable name="nulan_bag_id">1076599</variable>
+  <variable name="nulan_bag_id"></variable>
 </variables>
 
 <!--  Plugin help  -->
