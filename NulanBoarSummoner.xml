@@ -89,11 +89,11 @@ print("Nulan\'Boar bag ID set to "..GetVariable("nulan_bag_id"))</send>
    send_to="12"
    sequence="100"
   >
-  <send>bag = GetVariable("nulan_bag_id")
+  <send>bag = tonumber(GetVariable("nulan_bag_id"))
 target = "%1"
 validtarget = 1
 
-if tonumber(bag) < 1 then ColourNote("red", "", "No Bag ID has been set. Please use nulanbag &lt;yourbag id&gt;") validtarget = 2
+if bag == nil then ColourNote("red", "", "No Bag ID has been set. Please use nulanbag &lt;yourbag id&gt;") validtarget = 2
 elseif target == "grumpy badger" then token = "token badger fur" tokennum = "1"
 elseif target == "colorful robin" then token = "token songbird feather" tokennum = "1"
 elseif target == "eating finch" then token = "token songbird feather" tokennum = "2"
