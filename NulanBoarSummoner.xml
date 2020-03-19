@@ -15,7 +15,7 @@
    save_state="y"
    date_written="2020-03-15 13:52:17"
    requires="5.07"
-   version="1.2"
+   version="1.3"
    >
 <description trim="y">
 <![CDATA[
@@ -67,6 +67,38 @@ Designate your bag by typing "nulanbag <bag id>"
    sequence="100"
   >
   <send>ColourNote("red", "", "nulan &lt;mob name&gt; -- Summon this mob that is hiding in Nulan'Boar.")
+  Hyperlink("nulan grumpy badger", "grumpy badger", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan colorful robin", "colorful robin", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan eating finch", "eating finch", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan dull robin", "dull robin", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan finch", "finch", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan booted eagle", "booted eagle", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan solitary eagle", "solitary eagle", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan eagle", "eagle", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan wolf pup", "wolf pup", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan spotted grey wolf", "spotted grey wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan pure white wolf", "pure white wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan grey wolf", "grey wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan black wolf", "black wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan male alpha wolf", "male alpha wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan female alpha wolf", "female alpha wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan prairie dog puppy", "prairie dog puppy", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan alert prairie dog", "alert prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan playful prairie dog", "playful prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan playful prairie dog puppy", "playful prairie dog puppy", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan hungry prairie dog", "hungry prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan prairie dog", "prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan brown deer mouse", "brown deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan timid deer mouse", "timid deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan adorable deer mouse", "adorable deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan shy deer mouse", "shy deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan angry deer mouse", "angry deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan male sharp-tailed grouse", "male sharp-tailed grouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan female sharp-tailed grouse", "female sharp-tailed grouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan male horned owl", "male horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan hunting horned owl", "hunting horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan female horned owl", "female horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan lonely horned owl", "lonely horned owl", "", "blue", "", 0) ColourNote("red", "", "")
   ColourNote("red", "", "")
   ColourNote("red", "", "nulanbag &lt;bag id&gt; -- Set the bag ID that your summoning tokens are stored in.")
   ColourNote("red", "", "Current bag ID: "..GetVariable("nulan_bag_id"))
@@ -134,42 +166,44 @@ Send("get \'" .. token .. "\' " .. bag)
 Send("give \'" .. token .. "\' master")
 Send("say " .. tokennum)
 Send("put \'" .. token .. "\' " .. bag)
-elseif validtarget == 0 then print([[That is not a valid target. Valid targets are:
+elseif validtarget == 0 then
 
-grumpy badger
-colorful robin
-eating finch
-dull robin
-finch
-booted eagle
-solitary eagle
-eagle
-wolf pup
-spotted grey wolf
-pure white wolf
-grey wolf
-black wolf
-male alpha wolf
-female alpha wolf
-prairie dog puppy
-alert prairie dog
-playful prairie dog
-playful prairie dog puppy
-hungry prairie dog
-prairie dog
-brown deer mouse
-timid deer mouse
-adorable deer mouse
-shy deer mouse
-angry deer mouse
-male sharp-tailed grouse
-female sharp-tailed grouse
-male horned owl
-hunting horned owl
-female horned owl
-lonely horned owl
-
-Syntax must match exactly.]])
+ColourNote("red", "", "That is not a valid target. Valid targets are:")
+ColourNote("red", "", "")
+  Hyperlink("nulan grumpy badger", "grumpy badger", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan colorful robin", "colorful robin", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan eating finch", "eating finch", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan dull robin", "dull robin", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan finch", "finch", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan booted eagle", "booted eagle", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan solitary eagle", "solitary eagle", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan eagle", "eagle", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan wolf pup", "wolf pup", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan spotted grey wolf", "spotted grey wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan pure white wolf", "pure white wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan grey wolf", "grey wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan black wolf", "black wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan male alpha wolf", "male alpha wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan female alpha wolf", "female alpha wolf", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan prairie dog puppy", "prairie dog puppy", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan alert prairie dog", "alert prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan playful prairie dog", "playful prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan playful prairie dog puppy", "playful prairie dog puppy", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan hungry prairie dog", "hungry prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan prairie dog", "prairie dog", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan brown deer mouse", "brown deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan timid deer mouse", "timid deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan adorable deer mouse", "adorable deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan shy deer mouse", "shy deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan angry deer mouse", "angry deer mouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan male sharp-tailed grouse", "male sharp-tailed grouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan female sharp-tailed grouse", "female sharp-tailed grouse", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan male horned owl", "male horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan hunting horned owl", "hunting horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan female horned owl", "female horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+  Hyperlink("nulan lonely horned owl", "lonely horned owl", "", "blue", "", 0) ColourNote("red", "", "")
+ColourNote("red", "", "")
+ColourNote("red", "", "Syntax must match exactly.")
 end</send>
   </alias>
 </aliases>
