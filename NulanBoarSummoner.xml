@@ -57,6 +57,24 @@ Designate your bag by typing "nulanbag <bag id>"
 
 <include name="constants.lua"/>
 
+<!--  Triggers  -->
+
+<triggers>
+  <trigger
+   enabled="y"
+   match="^(?:a|an) (grumpy badger|colorful robin|eating finch|dull robin|finch|booted eagle|solitary eagle|eagle|wolf pup|spotted grey wolf|pure white wolf|grey wolf|black wolf|male alpha wolf|female alpha wolf|prairie dog puppy|alert prairie dog|playful prairie dog|playful prairie dog puppy|hungry prairie dog|prairie dog|brown deer mouse|timid deer mouse|adorable deer mouse|shy deer mouse|angry deer mouse|male sharp-tailed grouse|female sharp-tailed grouse|male horned owl|hunting horned owl|female horned owl|lonely horned owl)\s+Hiding, waiting for (?:daylight|the night)$"
+   regexp="y"
+   send_to="12"
+   sequence="100"
+  >
+  <send>require 'gmcphelper'
+  if gmcp("room.info.zone") == "nulan" then
+  SetVariable("nulan_last", "%1")
+  Hyperlink("nulan last", "Click this link or type \'nulan last\' to summon "..GetVariable("nulan_last")..".", "", "blue", "", 0) ColourNote("red", "", "")
+end</send>
+  </trigger>
+</triggers>
+
 <!--  Aliases  -->
 
 <aliases>
@@ -102,6 +120,7 @@ Designate your bag by typing "nulanbag <bag id>"
   Hyperlink("nulan lonely horned owl", "lonely horned owl", "", "blue", "", 0) ColourNote("red", "", "")
   ColourNote("red", "", "")
   ColourNote("red", "", "nulanbag &lt;bag id&gt; -- Set the bag ID that your summoning tokens are stored in.")
+  ColourNote("red", "", "nulan last -- Automatically go to the last hidden mob you used where on.")
   ColourNote("red", "", "Current bag ID: "..GetVariable("nulan_bag_id"))
   </send>
   </alias>
@@ -124,6 +143,7 @@ print("Nulan\'Boar bag ID set to "..GetVariable("nulan_bag_id"))</send>
   >
   <send>bag = tonumber(GetVariable("nulan_bag_id"))
 target = "%1"
+if target == "last" then target = GetVariable("nulan_last") end
 validtarget = 1
 
 if bag == nil then ColourNote("red", "", "No Bag ID has been set. Please use nulanbag &lt;yourbag id&gt;") validtarget = 2
