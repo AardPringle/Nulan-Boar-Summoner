@@ -7,6 +7,8 @@ Requires the mapper plugin enabled, the Nulan'Boar goal completed, and cexits to
 
 If your mob target is currently hiding, type nulan plus the mob's full name minus the a/an at the start to summon it. IE "nulan dull robin" but not "nulan a dull robin" Partial names do not match as there are many mobs with similar keywords.
 
+If you use where to find a mob and it is hiding, you can type "nulan last" to automatically summon that mob. A clickable link will appear as well with the same functionality.
+
 You will need the following items from Nulan'Boar placed in a bag and not flagged kept:
 
 (M) fur of a prairie dog (1)  
